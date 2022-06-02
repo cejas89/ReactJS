@@ -3,7 +3,31 @@
     padding: 0;
 }
 
-h1 {
-    font-size: 50px;
-    color: tomato;
+.navbar {
+    width: 100%;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    height: 20vh;
+}
+
+.img-logo {
+    border-radius: 60px;
+}
+
+.navbar-nav {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.navbar-logo {
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: white;
 }
