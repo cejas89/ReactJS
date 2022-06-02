@@ -1,4 +1,5 @@
 import React from "react";
+import logo from './logo.png'
 import './NavBar.css'
 
 export const MiPrimerComponente = () => {
@@ -7,7 +8,7 @@ export const MiPrimerComponente = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid nav-container">
             <a className="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="logo" width="60" height="60"/>
+              <img src= {logo} alt="logo" width="60" height="60"/>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
