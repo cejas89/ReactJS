@@ -1,14 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import {MiPrimerComponente} from './components/navbar/NavBar';
+import {CartWidget, NavBar} from './components/navbar/NavBar';
 
 
 
 function App() {
   return (
     <div className="App">
-      <MiPrimerComponente/>
+      <NavBar/>
+      <CartWidget/>
     </div>
+
+    
   );
 }
 

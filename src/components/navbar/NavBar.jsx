@@ -1,8 +1,9 @@
 import React from "react";
 import logo from './logo.png'
+import carrito from './carrito.png'
 import './NavBar.css'
 
-export const MiPrimerComponente = () => {
+export const NavBar = () => {
     return (
         <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,6 +30,9 @@ export const MiPrimerComponente = () => {
                   <a className="nav-link nav-contact" href="contact.html">Contacto</a>
                 </li>
               </ul>
+              <a className="navbar-brand" href="index.html">
+              <img className="navbar-logo" src= {carrito} alt="logo" width="50" height="50"/>
+              </a>
     
             </div>
           </div>
@@ -36,4 +40,22 @@ export const MiPrimerComponente = () => {
       </header>
 
     )
+}
+
+export const CartWidget = () => {
+  return (
+    <section>
+      <CardContainer/>
+    </section>
+  )
+}
+
+const CardContainer = () => {
+  return(
+    <div>
+          <h1>titulo</h1>
+          <p>Descripcion</p> 
+    </div>
+
+  )
 }
