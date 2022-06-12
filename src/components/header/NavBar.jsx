@@ -41,21 +41,3 @@ export const NavBar = () => {
 
     )
 }
-
-export const CartWidget = () => {
-  return (
-    <section>
-      <CardContainer/>
-    </section>
-  )
-}
-
-const CardContainer = () => {
-  return(
-    <div>
-          <h1>titulo</h1>
-          <p>Descripcion</p> 
-    </div>
-
-  )
-}

@@ -1,17 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import {CartWidget, NavBar} from './components/navbar/NavBar';
+import {NavBar} from './components/header/NavBar';
+import {Footer} from './components/footer/Footer';
+import {Body} from './components/body/CartWidget';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <CartWidget/>
-    </div>
+    <div>
+      
+    <NavBar/>
 
+    <Body/>
+
+    <Footer/>
     
+    </div>
   );
 }
 
