@@ -1,5 +1,6 @@
 import React from "react";
 import './CartWidget.css';
+import { ItemsCounts } from "./ItemCount";
 
 
 export const Body = () => {
@@ -29,6 +30,10 @@ export const Body = () => {
       
             </section>
             
+        <section>
+            <ItemsCounts/>
+        </section>
+
         </body>
     )
 
