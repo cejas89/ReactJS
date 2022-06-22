@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import {NavBar} from './components/header/NavBar';
 import {Footer} from './components/footer/Footer';
-import {Body} from './components/body/CartWidget';
+import { ConexionApi } from './components/body/PruebaFetch';
 import { ItemListContainer } from './components/ItemListContainer';
 
 
@@ -16,7 +15,9 @@ function App() {
     <ItemListContainer/>
 
     <Footer/>
-    
+
+    <ConexionApi/>
+        
     </div>
   );
 }
