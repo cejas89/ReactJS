@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 
@@ -7,9 +8,8 @@ export const ConexionApi = () => {
     
     useEffect (()=> {
         const getProductos = () => {
-            fetch('https://api.mercadolibre.com/sites/MLA/search?q=Bastidor')
-            .then(response => response.json())
-            .then((data => setProductos(data.results)));
+            axios.get('https://api.mercadolibre.com/sites/MLA/search?q=Bastidor')
+            .then(({data}) => setProductos(data.results));
         }
 
         getProductos();

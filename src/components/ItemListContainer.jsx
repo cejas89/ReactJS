@@ -1,23 +1,36 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import products from "../utilis/products";
-import customFetch from "../utilis/customFetch";
 import { ItemList } from "./ItemList";
+import axios from "axios";
 import style from './ItemList.module.css'
+import { CircularProgress } from "@mui/material";
 
 export const ItemListContainer = () => {
 const [items, setItems] = useState([]);
 
-useEffect(()=>{
-    customFetch(3000, products)
-    .then(resp => setItems(resp))
-},[items])
+const limitSearch = 3;
+
+
+useEffect (()=> {
+    setTimeout(() => {
+
+        const getItems = () => {
+            axios.get('https://api.mercadolibre.com/sites/MLA/search?q=Bastidor')
+            .then(({data}) => setItems(data.results.slice(0, limitSearch)));
+        }        
+        getItems();
+    }, 2000);
+
+    
+
+
+}, []);
 
 return (
     <div className={style.container}>
        {
-        items?.length <= 0 ? <h1>Loading......</h1> : <ItemList products={items}/>
+        items?.length <= 0 ? <CircularProgress /> : <ItemList products={items}/>
        }
         
     </div>
