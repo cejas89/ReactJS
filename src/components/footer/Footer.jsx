@@ -4,9 +4,7 @@ import './Footer.css'
 
 export const Footer = () => {
    
-    return (
-        <div>
-
-    </div>
-    )
+    return <>
+    <h1>Soy el footer</h1>
+    </>
 }

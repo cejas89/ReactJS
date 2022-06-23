@@ -30,7 +30,7 @@ useEffect (()=> {
 return (
     <div className={style.container}>
        {
-        items?.length <= 0 ? <CircularProgress /> : <ItemList products={items}/>
+        items?.length <= 0 ? <CircularProgress/> : <ItemList products={items}/>
        }
         
     </div>
